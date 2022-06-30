@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_intexsys_test_task_intexsys_test_taskUITests : NSObject
+@end
+@implementation PodsDummy_Pods_intexsys_test_task_intexsys_test_taskUITests
+@end
