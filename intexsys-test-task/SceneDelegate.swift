@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let categoriesController = CategoriesViewController(nibName: nil, bundle: nil)
+        let apiService = OpticsplanetAPIService(urlSession: URLSession.shared)
+        let categoriesVM = ProductCategoriesViewModel(apiService: apiService)
+        let categoriesController = ProductCategoriesViewController(viewModel: categoriesVM)
         let navigationController = UINavigationController(rootViewController: categoriesController)
         
         window.rootViewController = navigationController

@@ -6,7 +6,6 @@ target 'intexsys-test-task' do
   use_frameworks!
 
   # Pods for intexsys-test-task
-  pod 'RxSwift', '~> 6.5.0'
 
   target 'intexsys-test-taskTests' do
     inherit! :search_paths
