@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29714CB7C88466B9638733E7 /* Pods_intexsys_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBEF37C0CA00FDAA87A058B /* Pods_intexsys_test_task.framework */; };
 		9303C6C7286E860A005D0882 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6C6286E860A005D0882 /* ProductsListViewModel.swift */; };
 		9303C6C9286E86E7005D0882 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6C8286E86E7005D0882 /* ProductListCell.swift */; };
 		9303C6CB286E8828005D0882 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6CA286E8828005D0882 /* ProductCellViewModel.swift */; };
@@ -39,8 +38,6 @@
 		93B03938286E4F5800CEC3A9 /* ProductCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03937286E4F5800CEC3A9 /* ProductCategoryCell.swift */; };
 		93B0393D286E54D400CEC3A9 /* ProductCategories+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0393C286E54D400CEC3A9 /* ProductCategories+Types.swift */; };
 		93B0393F286E552E00CEC3A9 /* ProductCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0393E286E552E00CEC3A9 /* ProductCategoriesViewModel.swift */; };
-		9A76CAAE6D2003CE9D4C71D2 /* Pods_intexsys_test_taskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E823399769BAEBAC3C16907E /* Pods_intexsys_test_taskTests.framework */; };
-		C36C6554C7B58C5D8E6737E1 /* Pods_intexsys_test_task_intexsys_test_taskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64A0E536308826C7439BFAA /* Pods_intexsys_test_task_intexsys_test_taskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FBEF37C0CA00FDAA87A058B /* Pods_intexsys_test_task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intexsys_test_task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F860C66E58746516720BC4 /* Pods-intexsys-test-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-task.debug.xcconfig"; path = "Target Support Files/Pods-intexsys-test-task/Pods-intexsys-test-task.debug.xcconfig"; sourceTree = "<group>"; };
-		5FB9DC16159779F037D9822D /* Pods-intexsys-test-task-intexsys-test-taskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-task-intexsys-test-taskUITests.debug.xcconfig"; path = "Target Support Files/Pods-intexsys-test-task-intexsys-test-taskUITests/Pods-intexsys-test-task-intexsys-test-taskUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A078663FF13A3CB56A8E454 /* Pods-intexsys-test-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-task.release.xcconfig"; path = "Target Support Files/Pods-intexsys-test-task/Pods-intexsys-test-task.release.xcconfig"; sourceTree = "<group>"; };
-		91F8E19810447766C382F9DA /* Pods-intexsys-test-taskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-taskTests.release.xcconfig"; path = "Target Support Files/Pods-intexsys-test-taskTests/Pods-intexsys-test-taskTests.release.xcconfig"; sourceTree = "<group>"; };
 		9303C6C6286E860A005D0882 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
 		9303C6C8286E86E7005D0882 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
 		9303C6CA286E8828005D0882 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
@@ -101,10 +93,6 @@
 		93B03937286E4F5800CEC3A9 /* ProductCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCell.swift; sourceTree = "<group>"; };
 		93B0393C286E54D400CEC3A9 /* ProductCategories+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductCategories+Types.swift"; sourceTree = "<group>"; };
 		93B0393E286E552E00CEC3A9 /* ProductCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesViewModel.swift; sourceTree = "<group>"; };
-		BF1A4A946E80D90924BB3E22 /* Pods-intexsys-test-taskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-taskTests.debug.xcconfig"; path = "Target Support Files/Pods-intexsys-test-taskTests/Pods-intexsys-test-taskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E2B8F8133A495DE7006D5A4D /* Pods-intexsys-test-task-intexsys-test-taskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intexsys-test-task-intexsys-test-taskUITests.release.xcconfig"; path = "Target Support Files/Pods-intexsys-test-task-intexsys-test-taskUITests/Pods-intexsys-test-task-intexsys-test-taskUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E823399769BAEBAC3C16907E /* Pods_intexsys_test_taskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intexsys_test_taskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F64A0E536308826C7439BFAA /* Pods_intexsys_test_task_intexsys_test_taskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intexsys_test_task_intexsys_test_taskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29714CB7C88466B9638733E7 /* Pods_intexsys_test_task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A76CAAE6D2003CE9D4C71D2 /* Pods_intexsys_test_taskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,26 +114,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36C6554C7B58C5D8E6737E1 /* Pods_intexsys_test_task_intexsys_test_taskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A02B59DF452155A47E04D23 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				19F860C66E58746516720BC4 /* Pods-intexsys-test-task.debug.xcconfig */,
-				7A078663FF13A3CB56A8E454 /* Pods-intexsys-test-task.release.xcconfig */,
-				5FB9DC16159779F037D9822D /* Pods-intexsys-test-task-intexsys-test-taskUITests.debug.xcconfig */,
-				E2B8F8133A495DE7006D5A4D /* Pods-intexsys-test-task-intexsys-test-taskUITests.release.xcconfig */,
-				BF1A4A946E80D90924BB3E22 /* Pods-intexsys-test-taskTests.debug.xcconfig */,
-				91F8E19810447766C382F9DA /* Pods-intexsys-test-taskTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9303C6CC286E8CCE005D0882 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +138,6 @@
 				93B03906286DAF6C00CEC3A9 /* intexsys-test-taskTests */,
 				93B03910286DAF6C00CEC3A9 /* intexsys-test-taskUITests */,
 				93B038EE286DAF6B00CEC3A9 /* Products */,
-				8A02B59DF452155A47E04D23 /* Pods */,
-				BEDC9E1027BD90DE78DC7B05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,16 +249,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		BEDC9E1027BD90DE78DC7B05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0FBEF37C0CA00FDAA87A058B /* Pods_intexsys_test_task.framework */,
-				F64A0E536308826C7439BFAA /* Pods_intexsys_test_task_intexsys_test_taskUITests.framework */,
-				E823399769BAEBAC3C16907E /* Pods_intexsys_test_taskTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,7 +256,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93B03917286DAF6C00CEC3A9 /* Build configuration list for PBXNativeTarget "intexsys-test-task" */;
 			buildPhases = (
-				33F31AE0C50B305DC90E44C7 /* [CP] Check Pods Manifest.lock */,
 				93B038E9286DAF6B00CEC3A9 /* Sources */,
 				93B038EA286DAF6B00CEC3A9 /* Frameworks */,
 				93B038EB286DAF6B00CEC3A9 /* Resources */,
@@ -314,7 +273,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93B0391A286DAF6C00CEC3A9 /* Build configuration list for PBXNativeTarget "intexsys-test-taskTests" */;
 			buildPhases = (
-				34472F4D5F1E914820CF230C /* [CP] Check Pods Manifest.lock */,
 				93B038FF286DAF6C00CEC3A9 /* Sources */,
 				93B03900286DAF6C00CEC3A9 /* Frameworks */,
 				93B03901286DAF6C00CEC3A9 /* Resources */,
@@ -333,7 +291,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93B0391D286DAF6C00CEC3A9 /* Build configuration list for PBXNativeTarget "intexsys-test-taskUITests" */;
 			buildPhases = (
-				B44B7DD270978B40A1743D96 /* [CP] Check Pods Manifest.lock */,
 				93B03909286DAF6C00CEC3A9 /* Sources */,
 				93B0390A286DAF6C00CEC3A9 /* Frameworks */,
 				93B0390B286DAF6C00CEC3A9 /* Resources */,
@@ -416,75 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		33F31AE0C50B305DC90E44C7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intexsys-test-task-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		34472F4D5F1E914820CF230C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intexsys-test-taskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B44B7DD270978B40A1743D96 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intexsys-test-task-intexsys-test-taskUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93B038E9286DAF6B00CEC3A9 /* Sources */ = {
@@ -680,7 +568,6 @@
 		};
 		93B03918286DAF6C00CEC3A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19F860C66E58746516720BC4 /* Pods-intexsys-test-task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,7 +597,6 @@
 		};
 		93B03919286DAF6C00CEC3A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A078663FF13A3CB56A8E454 /* Pods-intexsys-test-task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,7 +626,6 @@
 		};
 		93B0391B286DAF6C00CEC3A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF1A4A946E80D90924BB3E22 /* Pods-intexsys-test-taskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -761,7 +646,6 @@
 		};
 		93B0391C286DAF6C00CEC3A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91F8E19810447766C382F9DA /* Pods-intexsys-test-taskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -782,7 +666,6 @@
 		};
 		93B0391E286DAF6C00CEC3A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FB9DC16159779F037D9822D /* Pods-intexsys-test-task-intexsys-test-taskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -802,7 +685,6 @@
 		};
 		93B0391F286DAF6C00CEC3A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2B8F8133A495DE7006D5A4D /* Pods-intexsys-test-task-intexsys-test-taskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;

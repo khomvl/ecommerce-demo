@@ -1,6 +1,0 @@
-framework module Pods_intexsys_test_task {
-  umbrella header "Pods-intexsys-test-task-umbrella.h"
-
-  export *
-  module * { export * }
-}
