@@ -107,12 +107,12 @@ final class ProductDetailsViewController: UIViewController {
             imageView.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
             
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 16.0),
+            priceLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 16.0),
+            priceLabel.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor),
+            
+            titleLabel.firstBaselineAnchor.constraint(equalTo: priceLabel.firstBaselineAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.leadingAnchor),
             titleLabel.trailingAnchor.constraint(lessThanOrEqualTo: priceLabel.leadingAnchor, constant: -32.0),
-            
-            priceLabel.topAnchor.constraint(equalTo: titleLabel.topAnchor),
-            priceLabel.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor),
             
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16.0),
             descriptionLabel.leadingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.leadingAnchor),

@@ -24,9 +24,6 @@
 		93B038F5286DAF6B00CEC3A9 /* ProductCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B038F4286DAF6B00CEC3A9 /* ProductCategoriesViewController.swift */; };
 		93B038FA286DAF6C00CEC3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B038F9286DAF6C00CEC3A9 /* Assets.xcassets */; };
 		93B038FD286DAF6C00CEC3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B038FB286DAF6C00CEC3A9 /* LaunchScreen.storyboard */; };
-		93B03908286DAF6C00CEC3A9 /* intexsys_test_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03907286DAF6C00CEC3A9 /* intexsys_test_taskTests.swift */; };
-		93B03912286DAF6C00CEC3A9 /* intexsys_test_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03911286DAF6C00CEC3A9 /* intexsys_test_taskUITests.swift */; };
-		93B03914286DAF6C00CEC3A9 /* intexsys_test_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03913286DAF6C00CEC3A9 /* intexsys_test_taskUITestsLaunchTests.swift */; };
 		93B03924286DB10100CEC3A9 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03923286DB10100CEC3A9 /* ProductDetailsViewController.swift */; };
 		93B03926286DB11200CEC3A9 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03925286DB11200CEC3A9 /* ProductsListViewController.swift */; };
 		93B03929286DBCF200CEC3A9 /* OpticsplanetAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03928286DBCF200CEC3A9 /* OpticsplanetAPIService.swift */; };
@@ -78,10 +75,7 @@
 		93B038FC286DAF6C00CEC3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B038FE286DAF6C00CEC3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93B03903286DAF6C00CEC3A9 /* intexsys-test-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intexsys-test-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93B03907286DAF6C00CEC3A9 /* intexsys_test_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intexsys_test_taskTests.swift; sourceTree = "<group>"; };
 		93B0390D286DAF6C00CEC3A9 /* intexsys-test-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intexsys-test-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93B03911286DAF6C00CEC3A9 /* intexsys_test_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intexsys_test_taskUITests.swift; sourceTree = "<group>"; };
-		93B03913286DAF6C00CEC3A9 /* intexsys_test_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intexsys_test_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93B03923286DB10100CEC3A9 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		93B03925286DB11200CEC3A9 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		93B03928286DBCF200CEC3A9 /* OpticsplanetAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticsplanetAPIService.swift; sourceTree = "<group>"; };
@@ -135,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				93B038EF286DAF6B00CEC3A9 /* intexsys-test-task */,
-				93B03906286DAF6C00CEC3A9 /* intexsys-test-taskTests */,
-				93B03910286DAF6C00CEC3A9 /* intexsys-test-taskUITests */,
 				93B038EE286DAF6B00CEC3A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,23 +158,6 @@
 				93B038FE286DAF6C00CEC3A9 /* Info.plist */,
 			);
 			path = "intexsys-test-task";
-			sourceTree = "<group>";
-		};
-		93B03906286DAF6C00CEC3A9 /* intexsys-test-taskTests */ = {
-			isa = PBXGroup;
-			children = (
-				93B03907286DAF6C00CEC3A9 /* intexsys_test_taskTests.swift */,
-			);
-			path = "intexsys-test-taskTests";
-			sourceTree = "<group>";
-		};
-		93B03910286DAF6C00CEC3A9 /* intexsys-test-taskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				93B03911286DAF6C00CEC3A9 /* intexsys_test_taskUITests.swift */,
-				93B03913286DAF6C00CEC3A9 /* intexsys_test_taskUITestsLaunchTests.swift */,
-			);
-			path = "intexsys-test-taskUITests";
 			sourceTree = "<group>";
 		};
 		93B03920286DB0A700CEC3A9 /* Categories */ = {
@@ -412,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B03908286DAF6C00CEC3A9 /* intexsys_test_taskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B03914286DAF6C00CEC3A9 /* intexsys_test_taskUITestsLaunchTests.swift in Sources */,
-				93B03912286DAF6C00CEC3A9 /* intexsys_test_taskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
