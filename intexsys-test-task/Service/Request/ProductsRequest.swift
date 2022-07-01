@@ -38,7 +38,7 @@ final class ProductsRequest: Requestable {
         self.categoryUrl = categoryUrl
     }
     
-    func execute(apiService: OpticsplanetAPIServicing) -> AnyPublisher<[Product], Error> {
+    func execute(apiService: OpticsplanetAPIServicing) -> AnyPublisher<ProductsResponse, Error> {
         apiService.requestData(self)
     }
 }

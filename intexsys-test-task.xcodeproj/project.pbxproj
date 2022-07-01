@@ -15,8 +15,11 @@
 		9303C6D0286E8CE9005D0882 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6CF286E8CE9005D0882 /* Requestable.swift */; };
 		9303C6D2286E8D7E005D0882 /* ProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D1286E8D7E005D0882 /* ProductsRequest.swift */; };
 		9303C6D4286E8E74005D0882 /* ProductDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D3286E8E74005D0882 /* ProductDetailsRequest.swift */; };
-		9303C6D6286E8EE7005D0882 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D5286E8EE7005D0882 /* ImageRequest.swift */; };
+		9303C6D6286E8EE7005D0882 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D5286E8EE7005D0882 /* ImageUrl.swift */; };
 		9303C6D8286E94DA005D0882 /* ProductsList+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D7286E94DA005D0882 /* ProductsList+Types.swift */; };
+		9303C6DA286F26B5005D0882 /* NSAttributedString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6D9286F26B5005D0882 /* NSAttributedString+Size.swift */; };
+		9303C6DE286F3ED1005D0882 /* ImageFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6DD286F3ED1005D0882 /* ImageFetchOperation.swift */; };
+		9303C6E0286F53D4005D0882 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303C6DF286F53D4005D0882 /* ProductDetailsViewModel.swift */; };
 		93B038F1286DAF6B00CEC3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B038F0286DAF6B00CEC3A9 /* AppDelegate.swift */; };
 		93B038F3286DAF6B00CEC3A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B038F2286DAF6B00CEC3A9 /* SceneDelegate.swift */; };
 		93B038F5286DAF6B00CEC3A9 /* ProductCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B038F4286DAF6B00CEC3A9 /* ProductCategoriesViewController.swift */; };
@@ -31,7 +34,6 @@
 		93B0392C286E3C5200CEC3A9 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0392B286E3C5200CEC3A9 /* ProductCategory.swift */; };
 		93B0392E286E3C7100CEC3A9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0392D286E3C7100CEC3A9 /* Product.swift */; };
 		93B03930286E3C8C00CEC3A9 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0392F286E3C8C00CEC3A9 /* ProductsResponse.swift */; };
-		93B03932286E3DBC00CEC3A9 /* ImageDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03931286E3DBC00CEC3A9 /* ImageDownloading.swift */; };
 		93B03934286E3FDE00CEC3A9 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03933286E3FDE00CEC3A9 /* ProductDetails.swift */; };
 		93B03936286E4F1100CEC3A9 /* ProductCategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03935286E4F1100CEC3A9 /* ProductCategoryCellViewModel.swift */; };
 		93B03938286E4F5800CEC3A9 /* ProductCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03937286E4F5800CEC3A9 /* ProductCategoryCell.swift */; };
@@ -71,8 +73,11 @@
 		9303C6CF286E8CE9005D0882 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		9303C6D1286E8D7E005D0882 /* ProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequest.swift; sourceTree = "<group>"; };
 		9303C6D3286E8E74005D0882 /* ProductDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsRequest.swift; sourceTree = "<group>"; };
-		9303C6D5286E8EE7005D0882 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		9303C6D5286E8EE7005D0882 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
 		9303C6D7286E94DA005D0882 /* ProductsList+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsList+Types.swift"; sourceTree = "<group>"; };
+		9303C6D9286F26B5005D0882 /* NSAttributedString+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Size.swift"; sourceTree = "<group>"; };
+		9303C6DD286F3ED1005D0882 /* ImageFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetchOperation.swift; sourceTree = "<group>"; };
+		9303C6DF286F53D4005D0882 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		93B038ED286DAF6B00CEC3A9 /* intexsys-test-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intexsys-test-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B038F0286DAF6B00CEC3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B038F2286DAF6B00CEC3A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +96,6 @@
 		93B0392B286E3C5200CEC3A9 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		93B0392D286E3C7100CEC3A9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		93B0392F286E3C8C00CEC3A9 /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
-		93B03931286E3DBC00CEC3A9 /* ImageDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloading.swift; sourceTree = "<group>"; };
 		93B03933286E3FDE00CEC3A9 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		93B03935286E4F1100CEC3A9 /* ProductCategoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCellViewModel.swift; sourceTree = "<group>"; };
 		93B03937286E4F5800CEC3A9 /* ProductCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCell.swift; sourceTree = "<group>"; };
@@ -151,7 +155,6 @@
 				9303C6CF286E8CE9005D0882 /* Requestable.swift */,
 				9303C6D1286E8D7E005D0882 /* ProductsRequest.swift */,
 				9303C6D3286E8E74005D0882 /* ProductDetailsRequest.swift */,
-				9303C6D5286E8EE7005D0882 /* ImageRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				93B03923286DB10100CEC3A9 /* ProductDetailsViewController.swift */,
+				9303C6DF286F53D4005D0882 /* ProductDetailsViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -251,7 +255,6 @@
 				93B0392A286E3C3E00CEC3A9 /* Entities */,
 				93B03928286DBCF200CEC3A9 /* OpticsplanetAPIService.swift */,
 				93B0392F286E3C8C00CEC3A9 /* ProductsResponse.swift */,
-				93B03931286E3DBC00CEC3A9 /* ImageDownloading.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -269,6 +272,9 @@
 		93B03939286E532600CEC3A9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9303C6D9286F26B5005D0882 /* NSAttributedString+Size.swift */,
+				9303C6DD286F3ED1005D0882 /* ImageFetchOperation.swift */,
+				9303C6D5286E8EE7005D0882 /* ImageUrl.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -487,10 +493,12 @@
 			files = (
 				93B038F5286DAF6B00CEC3A9 /* ProductCategoriesViewController.swift in Sources */,
 				9303C6D2286E8D7E005D0882 /* ProductsRequest.swift in Sources */,
+				9303C6DE286F3ED1005D0882 /* ImageFetchOperation.swift in Sources */,
+				9303C6DA286F26B5005D0882 /* NSAttributedString+Size.swift in Sources */,
 				93B03938286E4F5800CEC3A9 /* ProductCategoryCell.swift in Sources */,
 				9303C6D8286E94DA005D0882 /* ProductsList+Types.swift in Sources */,
 				9303C6C9286E86E7005D0882 /* ProductListCell.swift in Sources */,
-				9303C6D6286E8EE7005D0882 /* ImageRequest.swift in Sources */,
+				9303C6D6286E8EE7005D0882 /* ImageUrl.swift in Sources */,
 				9303C6C7286E860A005D0882 /* ProductsListViewModel.swift in Sources */,
 				93B0392E286E3C7100CEC3A9 /* Product.swift in Sources */,
 				9303C6D4286E8E74005D0882 /* ProductDetailsRequest.swift in Sources */,
@@ -498,9 +506,9 @@
 				93B038F1286DAF6B00CEC3A9 /* AppDelegate.swift in Sources */,
 				93B03929286DBCF200CEC3A9 /* OpticsplanetAPIService.swift in Sources */,
 				93B03936286E4F1100CEC3A9 /* ProductCategoryCellViewModel.swift in Sources */,
-				93B03932286E3DBC00CEC3A9 /* ImageDownloading.swift in Sources */,
 				93B038F3286DAF6B00CEC3A9 /* SceneDelegate.swift in Sources */,
 				9303C6CB286E8828005D0882 /* ProductCellViewModel.swift in Sources */,
+				9303C6E0286F53D4005D0882 /* ProductDetailsViewModel.swift in Sources */,
 				9303C6CE286E8CD9005D0882 /* ProductCategoriesRequest.swift in Sources */,
 				93B03934286E3FDE00CEC3A9 /* ProductDetails.swift in Sources */,
 				93B03924286DB10100CEC3A9 /* ProductDetailsViewController.swift in Sources */,

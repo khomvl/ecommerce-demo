@@ -9,7 +9,8 @@ import Foundation
 
 struct ProductDetails: Decodable {
     let productId: Product.Id
+    let shortName: String
     let primaryImage: String
     let cleanDescription: String
-    let price: Double
+    let minSalePrice: Double
 }

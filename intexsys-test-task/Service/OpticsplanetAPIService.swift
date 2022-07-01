@@ -18,7 +18,7 @@ protocol OpticsplanetAPIServicing {
     func requestData<Req: Requestable, Res: Decodable>(_ request: Req) -> AnyPublisher<Res, Error>
 }
 
-final class OpticsplanetAPIService: OpticsplanetAPIServicing, ImageDownloading {
+final class OpticsplanetAPIService: OpticsplanetAPIServicing {
     
     private let urlSession: URLSession
     
@@ -43,26 +43,6 @@ final class OpticsplanetAPIService: OpticsplanetAPIServicing, ImageDownloading {
                 return $0.data
             }
             .decode(type: Res.self, decoder: request.decoder)
-            .share()
-            .eraseToAnyPublisher()
-    }
-    
-    func downloadImage(_ request: Requestable) -> AnyPublisher<Data, Error> {
-        urlSession.dataTaskPublisher(for: request.urlRequest)
-            .tryMap {
-                guard
-                    let httpResponse = $0.response as? HTTPURLResponse,
-                    httpResponse.statusCode == 200
-                else {
-                    throw URLError(.badServerResponse)
-                }
-                
-                guard $0.data.count > 0 else {
-                    throw URLError(.zeroByteResource)
-                }
-                
-                return $0.data
-            }
             .share()
             .eraseToAnyPublisher()
     }

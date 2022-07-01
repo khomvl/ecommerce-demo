@@ -19,8 +19,14 @@ struct ProductCategoryCellViewModel {
         static let iconSize = CGSize(width: 16.0, height: 16.0)
     }
     
-    let id: ProductCategory.Id
-    let url: String
+    let category: ProductCategory
+    
+    var id: ProductCategory.Id {
+        category.categoryId
+    }
+    var url: String {
+        category.url
+    }
     let attributedTitle: NSAttributedString
     let titleFrame: CGRect
     let iconFrame: CGRect
@@ -32,12 +38,7 @@ struct ProductCategoryCellViewModel {
     }
     
     init(productCategory: ProductCategory) {
-        id = productCategory.categoryId
-        url = productCategory.url
-        attributedTitle = NSAttributedString(
-            string: productCategory.shortName,
-            attributes: Constants.titleAttributes
-        )
+        self.category = productCategory
         
         let screenWidth = UIScreen.main.bounds.width
         let insets = Constants.insets
@@ -48,14 +49,15 @@ struct ProductCategoryCellViewModel {
             - Constants.spacing
             - iconSize.width
         
-        let titleHeight = attributedTitle.boundingRect(
-            with: CGSize(
-                width: boundingWidth,
-                height: .greatestFiniteMagnitude
-            ),
-            options: [.usesLineFragmentOrigin],
-            context: nil
-        ).height
+        let attrubutedTitle = NSAttributedString(
+            string: category.shortName,
+            attributes: Constants.titleAttributes
+        )
+        self.attributedTitle = attrubutedTitle
+        
+        let titleHeight = attributedTitle
+            .size(boundingWidth: boundingWidth)
+            .height
         
         titleFrame = CGRect(
             x: insets.left, y: insets.top,
@@ -74,6 +76,10 @@ struct ProductCategoryCellViewModel {
 }
 
 extension ProductCategoryCellViewModel: Hashable {
+    static func == (lhs: ProductCategoryCellViewModel, rhs: ProductCategoryCellViewModel) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

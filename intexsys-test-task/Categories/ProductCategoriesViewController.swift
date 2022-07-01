@@ -95,14 +95,13 @@ final class ProductCategoriesViewController: UIViewController {
 
 extension ProductCategoriesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard indexPath.item < viewModel.viewModels.count else {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else {
             return
         }
         
-        let url = viewModel.viewModels[indexPath.item].url
-        
+        // move to coordinator
         let apiService = OpticsplanetAPIService(urlSession: .shared)
-        let vm = ProductsListViewModel(apiService: apiService, categoryUrl: url)
+        let vm = ProductsListViewModel(category: item.category, apiService: apiService)
         let vc = ProductsListViewController(viewModel: vm)
         navigationController?.pushViewController(vc, animated: true)
     }

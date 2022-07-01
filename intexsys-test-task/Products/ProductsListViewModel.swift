@@ -11,21 +11,33 @@ import Combine
 final class ProductsListViewModel {
     
     private let apiService: OpticsplanetAPIServicing
-    private let categoryUrl: String
+    private let category: ProductCategory
     
     private var subscriptions = Set<AnyCancellable>()
     
+    private lazy var imageLoaderQueue = DispatchQueue(
+        label: NSStringFromClass(Self.self),
+        qos: .background,
+        attributes: [.concurrent]
+    )
+    
+    var title: String {
+        category.shortName
+    }
+    
     @Published var viewModels = [ProductCellViewModel]()
     
-    init(apiService: OpticsplanetAPIServicing, categoryUrl: String) {
+    init(category: ProductCategory, apiService: OpticsplanetAPIServicing) {
+        self.category = category
         self.apiService = apiService
-        self.categoryUrl = categoryUrl
+        
+        reload()
     }
     
     func reload() {
-        ProductsRequest(categoryUrl: categoryUrl).execute(apiService: apiService)
-            .catch { _ in Just([]) }
-            .map { $0.map { ProductCellViewModel(product: $0) } }
+        ProductsRequest(categoryUrl: category.url).execute(apiService: apiService)
+            .map { $0.products.map(ProductCellViewModel.init) }
+            .catch { _ in Just([])}
             .receive(on: DispatchQueue.main)
             .assign(to: \.viewModels, on: self)
             .store(in: &subscriptions)
