@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct ProductCategoryViewModel {
+struct ProductCategoryCellViewModel {
     
     private enum Constants {
         static let titleAttributes: [NSAttributedString.Key: Any] = [
@@ -19,8 +19,9 @@ struct ProductCategoryViewModel {
         static let iconSize = CGSize(width: 16.0, height: 16.0)
     }
     
-    let categoryId: String
-    let categoryTitle: NSAttributedString
+    let id: ProductCategory.Id
+    let url: String
+    let attributedTitle: NSAttributedString
     let titleFrame: CGRect
     let iconFrame: CGRect
     
@@ -31,8 +32,9 @@ struct ProductCategoryViewModel {
     }
     
     init(productCategory: ProductCategory) {
-        categoryId = productCategory.categoryId
-        categoryTitle = NSAttributedString(
+        id = productCategory.categoryId
+        url = productCategory.url
+        attributedTitle = NSAttributedString(
             string: productCategory.shortName,
             attributes: Constants.titleAttributes
         )
@@ -46,7 +48,7 @@ struct ProductCategoryViewModel {
             - Constants.spacing
             - iconSize.width
         
-        let titleHeight = categoryTitle.boundingRect(
+        let titleHeight = attributedTitle.boundingRect(
             with: CGSize(
                 width: boundingWidth,
                 height: .greatestFiniteMagnitude
@@ -71,8 +73,8 @@ struct ProductCategoryViewModel {
     }
 }
 
-extension ProductCategoryViewModel: Hashable {
+extension ProductCategoryCellViewModel: Hashable {
     func hash(into hasher: inout Hasher) {
-        hasher.combine(categoryId)
+        hasher.combine(id)
     }
 }

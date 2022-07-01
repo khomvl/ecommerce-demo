@@ -7,10 +7,10 @@
 
 import Foundation
 
-typealias ProductId = Int
-
 struct Product: Decodable {
-    let id: ProductId
+    typealias Id = Int
+    
+    let id: Id
     let shortName: String
     let url: String
     let primaryImage: String

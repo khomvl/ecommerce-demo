@@ -79,10 +79,10 @@ final class ProductCategoriesViewController: UIViewController {
         NSLayoutConstraint.activate(layout)
         
         viewModel.$viewModels
-            .map {
+            .map { vms -> ProductCategoriesSnapshot in
                 var snapshot = ProductCategoriesSnapshot()
                 snapshot.appendSections([.main])
-                snapshot.appendItems($0, toSection: .main)
+                snapshot.appendItems(vms, toSection: .main)
                 
                 return snapshot
             }
@@ -90,8 +90,6 @@ final class ProductCategoriesViewController: UIViewController {
                 self.dataSource.apply($0)
             })
             .store(in: &subscriptions)
-
-        viewModel.reload()
     }
 }
 
@@ -101,22 +99,25 @@ extension ProductCategoriesViewController: UICollectionViewDelegate {
             return
         }
         
-        let viewModel = viewModel.viewModels[indexPath.item]
+        let url = viewModel.viewModels[indexPath.item].url
         
-        let productsVC = ProductsViewController()
-        navigationController?.pushViewController(productsVC, animated: true)
+        let apiService = OpticsplanetAPIService(urlSession: .shared)
+        let vm = ProductsListViewModel(apiService: apiService, categoryUrl: url)
+        let vc = ProductsListViewController(viewModel: vm)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension ProductCategoriesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard indexPath.item < viewModel.viewModels.count else {
+        
+        guard let viewModel = dataSource.itemIdentifier(for: indexPath) else {
             return .zero
         }
         
         return CGSize(
             width: UIScreen.main.bounds.width,
-            height: viewModel.viewModels[indexPath.item].cellHeight
+            height: viewModel.cellHeight
         )
     }
 }

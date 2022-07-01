@@ -11,6 +11,6 @@ enum ProductCategoriesSection {
     case main
 }
 
-typealias ProductCategoriesDataSource = UICollectionViewDiffableDataSource<ProductCategoriesSection, ProductCategoryViewModel>
+typealias ProductCategoriesDataSource = UICollectionViewDiffableDataSource<ProductCategoriesSection, ProductCategoryCellViewModel>
 
-typealias ProductCategoriesSnapshot = NSDiffableDataSourceSnapshot<ProductCategoriesSection, ProductCategoryViewModel>
+typealias ProductCategoriesSnapshot = NSDiffableDataSourceSnapshot<ProductCategoriesSection, ProductCategoryCellViewModel>

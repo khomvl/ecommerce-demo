@@ -39,9 +39,9 @@ final class ProductCategoryCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func fillIn(with viewModel: ProductCategoryViewModel) {
+    func fillIn(with viewModel: ProductCategoryCellViewModel) {
         titleLabel.frame = viewModel.titleFrame
-        titleLabel.attributedText = viewModel.categoryTitle
+        titleLabel.attributedText = viewModel.attributedTitle
         titleLabel.sizeToFit()
         
         iconView.frame = viewModel.iconFrame
