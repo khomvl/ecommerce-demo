@@ -26,6 +26,7 @@ final class ProductListCell: UICollectionViewCell {
         label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.backgroundColor = .white
         
         return label
     }()
@@ -33,6 +34,7 @@ final class ProductListCell: UICollectionViewCell {
     private let priceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .white
         
         return label
     }()

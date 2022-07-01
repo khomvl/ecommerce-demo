@@ -64,7 +64,7 @@ final class ProductCategoriesViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        title = "Categories"
+        title = "Categories" // to localizables
         
         view.addSubview(collectionView)
         collectionView.delegate = self

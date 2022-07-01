@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-final class ProductCellViewModel {
+struct ProductCellViewModel {
 
     private enum Constants {
         static let titleAttributes: [NSAttributedString.Key: Any] = [
@@ -47,7 +47,7 @@ final class ProductCellViewModel {
         )
         
         attributedPrice = NSAttributedString(
-            string: "$" + String(product.price), // use NumberFormatter
+            string: "$\(product.price)", // use NumberFormatter
             attributes: Constants.priceTextAttributes
         )
         

@@ -168,7 +168,11 @@ extension ProductsListViewController: UICollectionViewDelegate {
             return
         }
         
+        let svc = OpticsplanetAPIService(urlSession: .shared)
+        let vm = ProductDetailsViewModel(productUrl: item.url, apiService: svc)
+        let vc = ProductDetailsViewController(viewModel: vm)
         
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView,
