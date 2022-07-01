@@ -21,8 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let apiService = OpticsplanetAPIService(urlSession: .shared)
-        let categoriesVM = ProductCategoriesViewModel(apiService: apiService)
+        // wrap to coordinator
+        let categoriesVM = ProductCategoriesViewModel(apiService: OpticsplanetAPIService.shared)
         let categoriesController = ProductCategoriesViewController(viewModel: categoriesVM)
         let navigationController = UINavigationController(rootViewController: categoriesController)
         

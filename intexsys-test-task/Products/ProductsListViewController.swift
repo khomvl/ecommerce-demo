@@ -168,8 +168,11 @@ extension ProductsListViewController: UICollectionViewDelegate {
             return
         }
         
-        let svc = OpticsplanetAPIService(urlSession: .shared)
-        let vm = ProductDetailsViewModel(productUrl: item.url, apiService: svc)
+        // move to coordinator
+        let vm = ProductDetailsViewModel(
+            productUrl: item.url,
+            apiService: OpticsplanetAPIService.shared
+        )
         let vc = ProductDetailsViewController(viewModel: vm)
         
         navigationController?.pushViewController(vc, animated: true)

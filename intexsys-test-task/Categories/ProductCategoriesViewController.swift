@@ -100,8 +100,10 @@ extension ProductCategoriesViewController: UICollectionViewDelegate {
         }
         
         // move to coordinator
-        let apiService = OpticsplanetAPIService(urlSession: .shared)
-        let vm = ProductsListViewModel(category: item.category, apiService: apiService)
+        let vm = ProductsListViewModel(
+            category: item.category,
+            apiService: OpticsplanetAPIService.shared
+        )
         let vc = ProductsListViewController(viewModel: vm)
         navigationController?.pushViewController(vc, animated: true)
     }

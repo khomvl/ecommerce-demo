@@ -20,9 +20,11 @@ protocol OpticsplanetAPIServicing {
 
 final class OpticsplanetAPIService: OpticsplanetAPIServicing {
     
+    static let shared = OpticsplanetAPIService(urlSession: .shared)
+    
     private let urlSession: URLSession
     
-    init(urlSession: URLSession) {
+    private init(urlSession: URLSession) {
         self.urlSession = urlSession
     }
     
