@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93B038EC286DAF6B00CEC3A9"
-               BuildableName = "intexsys-test-task.app"
-               BlueprintName = "intexsys-test-task"
-               ReferencedContainer = "container:intexsys-test-task.xcodeproj">
+               BuildableName = "ecommerce-demo.app"
+               BlueprintName = "ecommerce-demo"
+               ReferencedContainer = "container:ecommerce-demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93B03902286DAF6C00CEC3A9"
-               BuildableName = "intexsys-test-taskTests.xctest"
-               BlueprintName = "intexsys-test-taskTests"
-               ReferencedContainer = "container:intexsys-test-task.xcodeproj">
+               BuildableName = "ecommerce-demoTests.xctest"
+               BlueprintName = "ecommerce-demoTests"
+               ReferencedContainer = "container:ecommerce-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93B0390C286DAF6C00CEC3A9"
-               BuildableName = "intexsys-test-taskUITests.xctest"
-               BlueprintName = "intexsys-test-taskUITests"
-               ReferencedContainer = "container:intexsys-test-task.xcodeproj">
+               BuildableName = "ecommerce-demoUITests.xctest"
+               BlueprintName = "ecommerce-demoUITests"
+               ReferencedContainer = "container:ecommerce-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93B038EC286DAF6B00CEC3A9"
-            BuildableName = "intexsys-test-task.app"
-            BlueprintName = "intexsys-test-task"
-            ReferencedContainer = "container:intexsys-test-task.xcodeproj">
+            BuildableName = "ecommerce-demo.app"
+            BlueprintName = "ecommerce-demo"
+            ReferencedContainer = "container:ecommerce-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93B038EC286DAF6B00CEC3A9"
-            BuildableName = "intexsys-test-task.app"
-            BlueprintName = "intexsys-test-task"
-            ReferencedContainer = "container:intexsys-test-task.xcodeproj">
+            BuildableName = "ecommerce-demo.app"
+            BlueprintName = "ecommerce-demo"
+            ReferencedContainer = "container:ecommerce-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
